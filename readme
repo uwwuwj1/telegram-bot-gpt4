@@ -1,6 +1,6 @@
-# Single-File Telegram Bot
+# Telegram Bot
 
-This repository contains a single-file Node.js script that implements a Telegram Bot with database integration, OpenAI requests, and rate-limiting placeholders. It is designed to be a compact, easy-to-deploy bot solution for quick experimentation or lightweight production use.
+This repository contains a  Node.js script that implements a Telegram Bot with database integration, OpenAI requests, and rate-limiting placeholders. It is designed to be a compact, easy-to-deploy bot solution for quick experimentation or lightweight production use.
 
 ## Features
 
