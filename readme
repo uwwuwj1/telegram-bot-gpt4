@@ -1,0 +1,26 @@
+# Single-File Telegram Bot
+
+This repository contains a single-file Node.js script that implements a Telegram Bot with database integration, OpenAI requests, and rate-limiting placeholders. It is designed to be a compact, easy-to-deploy bot solution for quick experimentation or lightweight production use.
+
+## Features
+
+1. **Configuration Loading**: Reads from `config.yaml` for bot token, OpenAI API key, MySQL credentials, rate limits, and other settings.
+2. **MySQL Database**: Uses a MySQL connection pool (via `mysql2/promise`) for storing user data and other information.
+3. **Telegram Commands**: Implements several commands, including `/start` and `/help`, along with a custom keyboard for actions like "Language Selection" or "Image Prompt."
+4. **Inline Keyboards**: Demonstrates how to handle inline keyboards (e.g. choosing a language).
+5. **OpenAI Integration**: Optionally integrates with OpenAI GPT-3.5 for generating text responses. If `OPENAI_API_KEY` is absent, AI features are disabled gracefully.
+6. **Rate Limiting (Placeholder)**: Shows how you could integrate your own rate limiting logic.
+
+## Requirements
+
+• Node.js (version 14 or later is recommended)
+• A Telegram bot token (obtain this via [BotFather](https://t.me/BotFather))
+• A MySQL database accessible to your Node.js environment
+• Optional: OpenAI API key to enable AI text or image generation
+
+## Getting Started
+
+1. **Install Dependencies**
+   In your project folder, run:
+   ```bash
+   npm install node-telegram-bot-api js-yaml mysql2 openai
