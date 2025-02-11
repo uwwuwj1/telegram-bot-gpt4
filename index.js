@@ -1,44 +1,4 @@
-/*
-  Complete Node.js Single-File Telegram Bot
-  -----------------------------------------
-  This script replicates the core functionality of a Python-based Telegram Bot project in one file.
 
-  1. Reads configuration from "config.yaml" (must be placed in the same directory).
-  2. Connects to a MySQL database (using mysql2/promise).
-  3. Creates a Telegram bot using node-telegram-bot-api, supporting multiple commands,
-     inline keyboards, OpenAI requests, and role switching (customizable).
-  4. Logs output to console; you can redirect output to debug.log if desired.
-
-  Required Dependencies (in package.json "dependencies"):
-    {
-      "node-telegram-bot-api": "^0.61.0",
-      "js-yaml": "^4.1.0",
-      "mysql2": "^3.1.2",
-      "openai": "^3.2.1"
-    }
-
-  To install and run:
-    1) npm install node-telegram-bot-api js-yaml mysql2 openai
-    2) node main.js  (or whatever filename you choose)
-
-  Usage:
-    - Ensure you have a config.yaml with fields like:
-        BOT_TOKEN: "123456:ABC-..."
-        OPENAI_API_KEY: "sk-..."
-        TIME_SPAN: 100
-        MAX_TOKEN: 2000
-        CONTEXT_COUNT: 5
-        RATE_LIMIT: 3
-        NOTIFICATION_CHANNEL: "@mychannel"
-        IMAGE_RATE_LIMIT: 2
-        DB_HOST: "localhost"
-        DB_USER: "root"
-        DB_PASSWORD: ""
-        DB_NAME: "my_database"
-    - Adjust as needed for your environment.
-
-  ------------------------------------------------------------------------------
-*/
 
 const fs = require('fs');
 const yaml = require('js-yaml');
